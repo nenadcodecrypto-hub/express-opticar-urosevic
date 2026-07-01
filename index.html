@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express Optičar Urošević | Optičarska radnja u Beogradu</title>
+    <meta
+      name="description"
+      content="Porodična optičarska radnja u Beogradu od 1984. godine. Dioptrijski i sunčani okviri, dioptrijska stakla, servis naočara i provera dioptrije."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Optician",
+        "name": "Express Optičar Urošević",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bulevar kralja Aleksandra 305",
+          "addressLocality": "Beograd",
+          "addressRegion": "Zvezdara",
+          "postalCode": "11160",
+          "addressCountry": "RS"
+        },
+        "telephone": ["+381112409552", "+38163690094"],
+        "email": "expressopticarurosevic@gmail.com",
+        "openingHours": "Mo-Fr 08:00-18:00",
+        "url": "https://nenadcodecrypto-hub.github.io/express-opticar-urosevic/"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#pocetna" aria-label="Express Optičar Urošević početna">
+        <img
+          class="brand-logo brand-logo--light"
+          src="assets/logo/express-opticar-urosevic-logo-hero.png"
+          alt="Express Optičar Urošević"
+        />
+        <img
+          class="brand-logo brand-logo--dark"
+          src="assets/logo/express-opticar-urosevic-logo-red.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Otvori meni" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Glavna navigacija" data-nav>
+        <a href="#o-nama">O nama</a>
+        <a href="#servis">Servis naočara</a>
+        <a href="#okviri">Okviri</a>
+        <a href="#stakla">Dioptrijska stakla</a>
+        <a href="#provera">Provera dioptrije</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="pocetna" aria-label="Uvod">
+        <div class="hero-media">
+          <img src="assets/storefront-hero.jpg" alt="Izlog i tenda optičarske radnje Express Optičar Urošević" />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>Tradicionalna optika, savremen pogled.</h1>
+          <p>
+            Od 1984. godine negujemo zanatsku preciznost, poverenje i individualan pristup pri izboru
+            okvira, stakala i servisu naočara.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#kontakt">Posetite nas</a>
+            <a class="button secondary" href="#servis">Pogledajte usluge</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" id="o-nama">
+        <div class="intro-grid">
+          <h2>Četiri decenije stručnosti, poverenja i pažljivog rada.</h2>
+          <div class="intro-copy">
+            <p>
+              Naša porodična optičarska radnja posluje od 1984. godine, negujući tradiciju zanatskog
+              rada, stručnosti i poverenja koje gradimo sa svojim klijentima već više od četiri decenije.
+            </p>
+            <p>
+              Kroz dugogodišnje iskustvo trudimo se da svakom kupcu pružimo individualan pristup,
+              kvalitetnu uslugu i najbolje rešenje za njegove potrebe.
+            </p>
+          </div>
+          <div class="intro-icons" aria-label="Glavne usluge">
+            <a href="#servis">
+              <span class="intro-icon" aria-hidden="true">
+                <i class="bi bi-screwdriver"></i>
+              </span>
+              <strong>Servis naočara</strong>
+            </a>
+            <a href="#okviri">
+              <span class="intro-icon" aria-hidden="true">
+                <i class="bi bi-eyeglasses"></i>
+              </span>
+              <strong>Okviri</strong>
+            </a>
+            <a href="#stakla">
+              <span class="intro-icon" aria-hidden="true">
+                <i class="bi bi-record-circle"></i>
+              </span>
+              <strong>Dioptrijska stakla</strong>
+            </a>
+            <a href="#provera">
+              <span class="intro-icon" aria-hidden="true">
+                <i class="bi bi-eye"></i>
+              </span>
+              <strong>Provera dioptrije</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-band" id="servis" aria-label="Usluge">
+        <article class="feature-service">
+          <section class="repair-tabs-section" aria-label="Servis naočara kroz tabove">
+            <div class="repair-tabs-heading">
+              <h3>Popravke, podešavanja i precizne intervencije.</h3>
+              <p>
+                Pružamo usluge svih vrsta popravki i servisiranja naočara, bez obzira na tip ili model
+                okvira. Veliki broj popravki rešavamo brzo i efikasno.
+              </p>
+            </div>
+
+            <div class="repair-tabs" data-tabs>
+              <div class="repair-tab-list" role="tablist" aria-label="Vrste popravki naočara">
+                <button class="repair-tab is-active" id="tab-srafovi" type="button" role="tab" aria-selected="true" aria-controls="panel-srafovi" data-tab="panel-srafovi">
+                  Zamena šrafova i nosača
+                </button>
+                <button class="repair-tab" id="tab-centriranje" type="button" role="tab" aria-selected="false" aria-controls="panel-centriranje" data-tab="panel-centriranje" tabindex="-1">
+                  Podešavanje okvira
+                </button>
+                <button class="repair-tab" id="tab-delovi" type="button" role="tab" aria-selected="false" aria-controls="panel-delovi" data-tab="panel-delovi" tabindex="-1">
+                  Zamena delova
+                </button>
+                <button class="repair-tab" id="tab-lemljenje" type="button" role="tab" aria-selected="false" aria-controls="panel-lemljenje" data-tab="panel-lemljenje" tabindex="-1">
+                  Metalni okviri
+                </button>
+                <button class="repair-tab" id="tab-intervencije" type="button" role="tab" aria-selected="false" aria-controls="panel-intervencije" data-tab="panel-intervencije" tabindex="-1">
+                  Veće intervencije
+                </button>
+              </div>
+
+              <article class="repair-tab-panel is-active" id="panel-srafovi" role="tabpanel" aria-labelledby="tab-srafovi" data-panel>
+                <img src="assets/service/service-screws.png" alt="Zamena šrafova i nosača na metalnom okviru" loading="lazy" />
+                <div>
+                  <span>01</span>
+                  <h3>Zamena šrafova i nosača</h3>
+                  <p>
+                    Kada naočare popuste, najčešći uzrok su sitni delovi: šrafovi, nosači, papučice ili
+                    elementi koji drže staklo i ručice. Takve intervencije zahtevaju pravi alat i mirnu
+                    ruku, jer se mala greška brzo oseti u svakodnevnom nošenju.
+                  </p>
+                  <ul>
+                    <li>Zatezanje i zamena šrafova</li>
+                    <li>Zamena nosača i silikonskih papučica</li>
+                    <li>Provera stabilnosti okvira nakon intervencije</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="repair-tab-panel" id="panel-centriranje" role="tabpanel" aria-labelledby="tab-centriranje" data-panel hidden>
+                <img src="assets/service/service-adjustment.png" alt="Podešavanje i centriranje okvira na optičarskom stolu" loading="lazy" />
+                <div>
+                  <span>02</span>
+                  <h3>Podešavanje i centriranje okvira</h3>
+                  <p>
+                    Okvir mora da stoji stabilno, ali bez pritiska. Podešavamo širinu, nagib, ručice i
+                    položaj na nosu kako bi naočare pratile lice i omogućile prirodan položaj stakala.
+                  </p>
+                  <ul>
+                    <li>Centriranje okvira prema licu</li>
+                    <li>Podešavanje ručica i mosta</li>
+                    <li>Udobnost pri dužem nošenju</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="repair-tab-panel" id="panel-delovi" role="tabpanel" aria-labelledby="tab-delovi" data-panel hidden>
+                <img src="assets/service/service-parts.png" alt="Rezervni delovi za popravku naočara" loading="lazy" />
+                <div>
+                  <span>03</span>
+                  <h3>Zamena oštećenih delova</h3>
+                  <p>
+                    Kada je osnovna konstrukcija okvira dobra, često nema potrebe za novim naočarima.
+                    Menjamo oštećene ili dotrajale detalje i proveravamo da li okvir može bezbedno da
+                    nastavi da se koristi.
+                  </p>
+                  <ul>
+                    <li>Šarke, nosači i krajevi ručica</li>
+                    <li>Manji rezervni delovi za svakodnevnu upotrebu</li>
+                    <li>Procena isplativosti popravke</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="repair-tab-panel" id="panel-lemljenje" role="tabpanel" aria-labelledby="tab-lemljenje" data-panel hidden>
+                <img src="assets/service/service-solder.png" alt="Precizna popravka metalnog okvira" loading="lazy" />
+                <div>
+                  <span>04</span>
+                  <h3>Lemljenje i popravka metalnih okvira</h3>
+                  <p>
+                    Metalni okviri traže pažljiv pristup, naročito kada se radi o spojevima, mostu ili
+                    ručicama. Pre intervencije proveravamo materijal i oštećenje, kako bismo znali da li
+                    popravka može da bude dugotrajna.
+                  </p>
+                  <ul>
+                    <li>Popravka spojeva i metalnih delova</li>
+                    <li>Precizan rad uz zaštitu stakala</li>
+                    <li>Savet kada je okvir bolje zameniti</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="repair-tab-panel" id="panel-intervencije" role="tabpanel" aria-labelledby="tab-intervencije" data-panel hidden>
+                <img src="assets/service/service-interventions.png" alt="Optičarski pregled više okvira i kompleksniji servis naočara" loading="lazy" />
+                <div>
+                  <span>05</span>
+                  <h3>Manje i veće intervencije na naočarima</h3>
+                  <p>
+                    Neke popravke su gotove brzo, a neke zahtevaju više procene i rada. Zato svake
+                    naočare prvo pregledamo, objasnimo šta je moguće i predložimo rešenje koje ima smisla
+                    za okvir, stakla i način nošenja.
+                  </p>
+                  <ul>
+                    <li>Brze intervencije i zatezanje</li>
+                    <li>Kompleksnije popravke i kombinovane zamene</li>
+                    <li>Jasan savet pre početka rada</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+        </article>
+      </section>
+
+      <section class="frames-section" id="okviri" aria-labelledby="frames-title">
+        <div class="frames-copy">
+          <h2 id="frames-title">Dioptrijski i sunčani okviri</h2>
+          <p>
+            U našoj ponudi nalazi se širok izbor dioptrijskih i sunčanih okvira za žene, muškarce i
+            decu.
+          </p>
+          <p>
+            Pažljivo biramo modele koji prate savremene trendove, ali i zadovoljavaju visoke standarde
+            kvaliteta, udobnosti i trajnosti. Bez obzira da li tražite klasičan, elegantan ili moderan
+            okvir, pomoći ćemo vam da pronađete model koji najbolje odgovara vašem licu, stilu i
+            potrebama.
+          </p>
+        </div>
+
+        <div class="frame-catalog">
+          <article class="frame-showcase frame-showcase--sun">
+            <div class="frame-products frame-products--sun" aria-label="Modeli sunčanih okvira">
+              <figure class="frame-product">
+                <img
+                  src="assets/frames/rayban-rb3025-transparent.png"
+                  alt="Ray-Ban RB3025 Aviator sunčane naočare"
+                  loading="lazy"
+                />
+                <figcaption>Ray-Ban RB3025 Aviator</figcaption>
+              </figure>
+              <figure class="frame-product">
+                <img
+                  src="assets/frames/rayban-wayfarer-reverse-blue-transparent.png"
+                  alt="Ray-Ban Wayfarer Reverse plave sunčane naočare"
+                  loading="lazy"
+                />
+                <figcaption>Ray-Ban Wayfarer Reverse</figcaption>
+              </figure>
+              <figure class="frame-product">
+                <img
+                  src="assets/frames/rayban-oval-metal-transparent.png"
+                  alt="Ray-Ban Oval Metal sunčane naočare"
+                  loading="lazy"
+                />
+                <figcaption>Ray-Ban Oval Metal</figcaption>
+              </figure>
+              <figure class="frame-product">
+                <img
+                  src="assets/frames/rayban-thalia-transparent.png"
+                  alt="Ray-Ban Thalia sunčane naočare"
+                  loading="lazy"
+                />
+                <figcaption>Ray-Ban Thalia</figcaption>
+              </figure>
+            </div>
+            <div class="frame-story">
+              <span>Sunčani okviri</span>
+              <h3>Modeli za zaštitu, stil i svakodnevno nošenje.</h3>
+              <p>
+                Sunčane okvire biramo prema obliku lica, udobnosti i kvalitetu izrade, sa modelima koji
+                dobro stoje i u gradu i na putovanju.
+              </p>
+              <p>
+                Važno nam je da naočare budu stabilne, lagane i prijatne za duže nošenje, ali i da
+                obezbede dobru zaštitu od sunca i odsjaja tokom svakodnevnih aktivnosti.
+              </p>
+              <p>
+                Zato pri izboru gledamo i širinu okvira, boju stakala, položaj na nosu i način na koji
+                se model uklapa uz vaš stil.
+              </p>
+            </div>
+          </article>
+
+          <section class="frame-brands" aria-labelledby="sun-brands-title">
+            <h3 id="sun-brands-title">Brendovi sunčanih okvira</h3>
+            <div class="frame-brand-logos frame-brand-logos--sun">
+              <img src="assets/brands/frames/rayban.svg" alt="Ray-Ban" loading="lazy" />
+              <img src="assets/brands/frames/emporio-armani.svg" alt="Emporio Armani" loading="lazy" />
+              <img src="assets/brands/frames/vogue.svg" alt="Vogue Eyewear" loading="lazy" />
+            </div>
+          </section>
+
+          <article class="frame-showcase frame-showcase--optical">
+            <div class="frame-products frame-products--optical" aria-label="Modeli dioptrijskih okvira">
+              <figure class="frame-product">
+                <img
+                  src="assets/frames/rayban-david-titanium-optics-transparent.png"
+                  alt="Ray-Ban David Titanium Optics dioptrijski okvir"
+                  loading="lazy"
+                />
+                <figcaption>David Titanium Optics</figcaption>
+              </figure>
+              <figure class="frame-product">
+                <img
+                  src="assets/frames/rayban-rb8412-optics-transparent.png"
+                  alt="Ray-Ban RB8412 Optics dioptrijski okvir"
+                  loading="lazy"
+                />
+                <figcaption>RB8412 Optics</figcaption>
+              </figure>
+              <figure class="frame-product">
+                <img
+                  src="assets/frames/rayban-rb7235-optics-transparent.png"
+                  alt="Ray-Ban RB7235 Optics dioptrijski okvir"
+                  loading="lazy"
+                />
+                <figcaption>RB7235 Optics</figcaption>
+              </figure>
+              <figure class="frame-product">
+                <img
+                  src="assets/frames/rayban-rb7140-optics-transparent.png"
+                  alt="Ray-Ban RB7140 Optics dioptrijski okvir"
+                  loading="lazy"
+                />
+                <figcaption>RB7140 Optics</figcaption>
+              </figure>
+            </div>
+            <div class="frame-story">
+              <span>Dioptrijski okviri</span>
+              <h3>Okviri koji prate lice, dioptriju i navike.</h3>
+              <p>
+                Kod dioptrijskih okvira vodimo računa o težini, stabilnosti, širini mosta i tome kako
+                će izabrani model nositi stakla koja su vam potrebna.
+              </p>
+              <p>
+                Dobar okvir treba da stoji mirno na licu, bez pritiska iza ušiju ili na nosu, naročito
+                kada se naočare nose tokom celog dana.
+              </p>
+              <p>
+                Zato uz izgled proveravamo i dimenzije, oblik ručica, prostor za dioptrijska stakla i
+                udobnost pri čitanju, radu za računarom i svakodnevnom kretanju.
+              </p>
+            </div>
+          </article>
+
+          <section class="frame-brands" aria-labelledby="optical-brands-title">
+            <h3 id="optical-brands-title">Brendovi dioptrijskih okvira</h3>
+            <div class="frame-brand-logos">
+              <img src="assets/brands/frames/benetton.svg" alt="Benetton" loading="lazy" />
+              <img src="assets/brands/frames/pepe-jeans.svg" alt="Pepe Jeans" loading="lazy" />
+              <img src="assets/brands/frames/hemme.svg" alt="Hemme" loading="lazy" />
+              <img src="assets/brands/frames/dacci.svg" alt="Dacci" loading="lazy" />
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="lens-section" id="stakla" aria-label="Vrste dioptrijskih stakala">
+        <div class="lens-content">
+          <h2>Stakla biramo prema vašoj svakodnevici, ne samo prema dioptriji.</h2>
+          <p>
+            Sarađujemo sa vodećim svetskim proizvođačima dioptrijskih stakala kako bismo obezbedili
+            kvalitet vida, udobnost nošenja i dugotrajnost.
+          </p>
+        </div>
+
+        <div class="lens-editorial">
+          <figure class="lens-lead">
+            <img
+              src="assets/lenses/lens-single-vision.png"
+              alt="Naočare sa čistim jednojačinskim dioptrijskim staklima na optičarskom stolu"
+              loading="lazy"
+            />
+            <figcaption>Stakla se biraju prema dioptriji, okviru i načinu na koji ih stvarno nosite.</figcaption>
+          </figure>
+
+          <div class="lens-list" aria-label="Tipovi dioptrijskih stakala">
+            <article>
+              <img src="assets/lenses/lens-single-vision.png" alt="Jednojačinska dioptrijska stakla u elegantnom okviru" loading="lazy" />
+              <div>
+                <span>01</span>
+                <h3>Jednojačinska stakla</h3>
+                <p>Najčešći izbor za jasno gledanje na jednu udaljenost: daljinu, blizinu ili konkretan svakodnevni zadatak.</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/lenses/lens-progressive.png" alt="Progresivna dioptrijska stakla sa diskretnim mernim oznakama" loading="lazy" />
+              <div>
+                <span>02</span>
+                <h3>Progresivna stakla</h3>
+                <p>Jedne naočare za daljinu, srednju udaljenost i čitanje, uz precizno centriranje prema okviru i načinu nošenja.</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/lenses/lens-office.png" alt="Kancelarijska dioptrijska stakla na radnom stolu pored ekrana" loading="lazy" />
+              <div>
+                <span>03</span>
+                <h3>Kancelarijska stakla</h3>
+                <p>Udobna za rad za računarom, dokumentima i sastancima, kada su najvažnije bliska i srednja rastojanja.</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/lenses/lens-blue-light.png" alt="Naočare sa zaštitom od plave svetlosti pored ekrana" loading="lazy" />
+              <div>
+                <span>04</span>
+                <h3>Blue light zaštita</h3>
+                <p>Za dane provedene uz ekrane, sa slojem koji smanjuje odsjaj i pomaže da gledanje bude mirnije.</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/lenses/lens-photochromic.png" alt="Fotogrej dioptrijska stakla na sunčevoj svetlosti pored izloga" loading="lazy" />
+              <div>
+                <span>05</span>
+                <h3>Fotogrej stakla</h3>
+                <p>Stakla koja se prilagođavaju svetlu: u zatvorenom su prozirnija, a napolju potamne za prijatniji boravak na suncu.</p>
+              </div>
+            </article>
+            <article>
+              <img src="assets/lenses/lens-thin.png" alt="Stanjena dioptrijska stakla sa tankim profilom na optičarskom stolu" loading="lazy" />
+              <div>
+                <span>06</span>
+                <h3>Stanjena stakla</h3>
+                <p>Kod većih dioptrija biramo tanji profil kada želite lakše naočare i elegantniji izgled okvira.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="lens-brands" aria-label="Brendovi dioptrijskih stakala u ponudi">
+          <h3>Brendovi dioptrijskih stakala u našoj ponudi</h3>
+          <div class="lens-brand-logos">
+            <img src="assets/brands/essilor.svg" alt="Essilor" loading="lazy" />
+            <img src="assets/brands/zeiss.svg" alt="ZEISS" loading="lazy" />
+            <img src="assets/brands/pol-optic.svg" alt="POL optic" loading="lazy" />
+            <img src="assets/brands/grossoptic.svg" alt="Gross optic" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="vision-section" id="provera" aria-labelledby="vision-title">
+        <div class="vision-heading">
+          <h2 id="vision-title">Provera dioptrije</h2>
+          <p>
+            Precizna provera vida pomaže da okvir i stakla budu usklađeni sa vašim očima, navikama i
+            svakodnevnim načinom gledanja.
+          </p>
+        </div>
+
+        <div class="vision-editorial">
+          <figure class="vision-visual">
+            <img
+              src="assets/provera/provera-dioptrije.png"
+              alt="Optometrista proverava dioptriju pacijentu pomoću probnog okvira"
+              loading="lazy"
+            />
+          </figure>
+
+          <div class="vision-copy">
+            <span>Pregled vida</span>
+            <h3>Jasna slika počinje dobrim merenjem.</h3>
+            <p>
+              Tokom provere dioptrije pažljivo pratimo kako vidite na daljinu, blizinu i srednjim
+              rastojanjima, jer se potrebe razlikuju za vožnju, čitanje, rad za računarom i svakodnevne
+              obaveze.
+            </p>
+            <p>
+              Nakon merenja razgovaramo o vašim navikama i prethodnom iskustvu sa naočarima, kako bismo
+              preporučili stakla koja imaju smisla za način na koji ih stvarno koristite.
+            </p>
+            <p>
+              Cilj nije samo da dioptrija bude tačna, već da naočare budu udobne, prirodne za nošenje i
+              dobro uklopljene sa izabranim okvirom.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="kontakt">
+        <div class="contact-copy">
+          <h2>Bulevar kralja Aleksandra 305. Tu smo za okvir, stakla i servis.</h2>
+          <p>
+            Posetite nas na Zvezdari za izbor dioptrijskih i sunčanih okvira, savetovanje oko stakala,
+            proveru dioptrije i precizne popravke naočara.
+          </p>
+
+          <div class="contact-cards">
+            <article>
+              <span>Adresa</span>
+              <strong>Bulevar kralja Aleksandra 305</strong>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Bulevar%20kralja%20Aleksandra%20305%2C%20Beograd"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Otvori na Google Maps
+              </a>
+            </article>
+            <article>
+              <span>Telefon</span>
+              <strong>011 / 2409-552</strong>
+              <a href="tel:+381112409552">Pozovi radnju</a>
+            </article>
+            <article>
+              <span>Mobilni</span>
+              <strong>063 / 690-094</strong>
+              <a href="tel:+38163690094">Pozovi mobilni</a>
+            </article>
+            <article>
+              <span>Radno vreme</span>
+              <strong>08:00 - 18:00</strong>
+              <p>Ponedeljak - petak</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="contact-visual" aria-label="Mapa lokacije">
+          <div class="rotator" aria-hidden="true">
+            <span>EXPRESS OPTIČAR UROŠEVIĆ • BEOGRAD • OD 1984 •</span>
+          </div>
+          <div class="map-card">
+            <iframe
+              title="Mapa lokacije Express Optičar Urošević"
+              src="https://www.google.com/maps?q=Bulevar%20kralja%20Aleksandra%20305%2C%20Beograd&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Express Optičar Urošević. Sva prava zadržana.</p>
+      <a href="#pocetna">Nazad na vrh</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
