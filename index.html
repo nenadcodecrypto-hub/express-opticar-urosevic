@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260707-language-switch" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -49,42 +49,67 @@
         />
         <img
           class="brand-logo brand-logo--dark"
-          src="assets/logo/express-opticar-urosevic-logo.png"
+          src="assets/logo/express-opticar-urosevic-logo-red.png"
           alt=""
           aria-hidden="true"
         />
       </a>
-
-      <button class="menu-toggle" type="button" aria-label="Otvori meni" aria-expanded="false" data-menu-toggle>
-        <span></span>
-        <span></span>
-      </button>
 
       <nav class="main-nav" aria-label="Glavna navigacija" data-nav>
         <a href="#o-nama">O nama</a>
         <a href="#servis">Servis naočara</a>
         <a href="#okviri">Okviri</a>
         <a href="#stakla">Dioptrijska stakla</a>
+        <a href="#ugradnja">Ugradnja stakala</a>
         <a href="#provera">Provera dioptrije</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Izbor jezika">
+          <button class="language-switch__option is-active" type="button" data-lang-option="sr" aria-pressed="true">
+            SR
+          </button>
+          <button class="language-switch__option" type="button" data-lang-option="en" aria-pressed="false">
+            EN
+          </button>
+          <span class="language-switch__thumb" aria-hidden="true"></span>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Otvori meni" aria-expanded="false" data-menu-toggle>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main>
       <section class="hero" id="pocetna" aria-label="Uvod">
-        <div class="hero-media">
-          <img src="assets/storefront-hero.jpg" alt="Izlog i tenda optičarske radnje Express Optičar Urošević" />
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <h1>Tradicionalna optika, savremen pogled.</h1>
-          <p>
-            Od 1984. godine negujemo zanatsku preciznost, poverenje i individualan pristup pri izboru
-            okvira, stakala i servisu naočara.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#kontakt">Posetite nas</a>
-            <a class="button secondary" href="#servis">Pogledajte usluge</a>
+        <div class="hero-shell">
+          <div class="hero-content">
+            <span class="hero-kicker">Porodična optičarska radnja u Beogradu</span>
+            <h1>Tradicionalna optika, savremen pogled.</h1>
+            <p>
+              Od 1984. godine negujemo zanatsku preciznost, poverenje i individualan pristup pri izboru
+              okvira, stakala i servisu naočara.
+            </p>
+            <dl class="hero-proof" aria-label="Kratke informacije">
+              <div>
+                <dt>1984.</dt>
+                <dd>godina osnivanja</dd>
+              </div>
+              <div>
+                <dt>40+</dt>
+                <dd>godina iskustva</dd>
+              </div>
+              <div>
+                <dt>Adrese</dt>
+                <dd>Bulevar kralja Aleksandra 305 i 297</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hero-visual">
+            <img src="assets/storefront-front.png" alt="Izlog i ulaz u lokal Express Optičar Urošević" />
           </div>
         </div>
       </section>
@@ -120,6 +145,12 @@
                 <i class="bi bi-record-circle"></i>
               </span>
               <strong>Dioptrijska stakla</strong>
+            </a>
+            <a href="#ugradnja">
+              <span class="intro-icon" aria-hidden="true">
+                <i class="bi bi-bullseye"></i>
+              </span>
+              <strong>Ugradnja stakla</strong>
             </a>
             <a href="#provera">
               <span class="intro-icon" aria-hidden="true">
@@ -318,7 +349,7 @@
                 <img src="assets/brands/frames/pepe-jeans.svg" alt="Pepe Jeans" loading="eager" />
                 <img src="assets/brands/frames/hemme.svg" alt="Hemme Paris" loading="eager" />
                 <img src="assets/brands/frames/dacci.svg" alt="Dacci" loading="eager" />
-                <img src="assets/brands/frames/catherine-jones.svg" alt="Catherine Jones" loading="eager" />
+                <img src="assets/brands/frames/katrin-jones.svg" alt="Katrin Jones" loading="eager" />
                 <img src="assets/brands/frames/tom-richard.svg" alt="Tom Richard" loading="eager" />
                 <img src="assets/brands/frames/rayban.svg" alt="" loading="eager" aria-hidden="true" />
                 <img src="assets/brands/frames/emporio-armani.svg" alt="" loading="eager" aria-hidden="true" />
@@ -328,7 +359,7 @@
                 <img src="assets/brands/frames/pepe-jeans.svg" alt="" loading="eager" aria-hidden="true" />
                 <img src="assets/brands/frames/hemme.svg" alt="" loading="eager" aria-hidden="true" />
                 <img src="assets/brands/frames/dacci.svg" alt="" loading="eager" aria-hidden="true" />
-                <img src="assets/brands/frames/catherine-jones.svg" alt="" loading="eager" aria-hidden="true" />
+                <img src="assets/brands/frames/katrin-jones.svg" alt="" loading="eager" aria-hidden="true" />
                 <img src="assets/brands/frames/tom-richard.svg" alt="" loading="eager" aria-hidden="true" />
               </div>
             </div>
@@ -471,6 +502,68 @@
         </div>
       </section>
 
+      <section class="installation-section" id="ugradnja" aria-labelledby="installation-title">
+        <div class="installation-editorial">
+          <div class="installation-visual">
+            <figure class="installation-figure installation-figure--machine">
+              <img
+                src="assets/masina_ugradnja_stakala.png"
+                alt="Essilor Mister Blue 2.0 mašina za preciznu ugradnju dioptrijskih stakala"
+                loading="lazy"
+              />
+              <figcaption>Essilor Mister Blue 2.0</figcaption>
+            </figure>
+            <figure class="installation-figure">
+              <img
+                src="assets/ugradnja_stakala_softver.png"
+                alt="Softver za digitalno centriranje i obradu oblika stakla"
+                loading="lazy"
+              />
+              <figcaption>Digitalni sistem za centriranje i obradu stakala</figcaption>
+            </figure>
+          </div>
+
+          <div class="installation-copy">
+            <span>Ugradnja stakala</span>
+            <h2 id="installation-title">Vrhunska preciznost za Vaš vid: Ugradnja u sve vrste ramova</h2>
+            <p>
+              U našoj radionici spajamo zanatsku preciznost i najsavremeniju tehnologiju. Vršimo
+              ugradnju svih vrsta stakala u bilo koji tip rama koji odaberete:
+            </p>
+            <ul class="installation-list" aria-label="Vrste ramova za ugradnju stakala">
+              <li>Puni ramovi (plastični i metalni)</li>
+              <li>Ramovi na najlon (polurami)</li>
+              <li>Ramovi na bušenje (bez okvira / rimless)</li>
+              <li>Sportski ramovi (visoko zakrivljene baze)</li>
+            </ul>
+
+            <div class="installation-block">
+              <h3>Tehnologija bez kompromisa: Essilor Mister Blue 2.0</h3>
+              <p>
+                Ugradnju radimo na mašini najnovije generacije - Essilor Mister Blue 2.0. Ovaj sistem
+                digitalnog brušenja garantuje stopostotnu tačnost u mikron, savršeno ležanje stakla u
+                ramu bez tenzije i besprekornu estetiku, čak i kod najzahtevnijih oblika i složenih
+                sportskih okvira.
+              </p>
+            </div>
+
+            <div class="installation-block">
+              <h3>Pouzdan partner za građane i druge optike</h3>
+              <p>Naše usluge prilagođene su svim zahtevima tržišta:</p>
+              <p>
+                <strong>Za krajnje klijente:</strong> Brza, precizna ugradnja i besprekoran estetski
+                završetak vaših naočara.
+              </p>
+              <p>
+                <strong>Za optičarske radnje (B2B):</strong> Vršimo uslužno brušenje i ugradnju za druge
+                optike. Ako vaša radnja nema opremu za specifične ugradnje poput bušenja ili sportskih
+                baza, mi smo vaš pouzdan partner koji poštuje rokove i garantuje vrhunski kvalitet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="vision-section" id="provera" aria-labelledby="vision-title">
         <div class="vision-heading">
           <h2 id="vision-title">Provera dioptrije</h2>
@@ -511,7 +604,7 @@
 
       <section class="contact-section" id="kontakt">
         <div class="contact-copy">
-          <h2>Bulevar kralja Aleksandra 305. Tu smo za okvir, stakla i servis.</h2>
+          <h2>Dve adrese, isti pažljiv pogled na vaše naočare.</h2>
           <p>
             Posetite nas na Zvezdari za izbor dioptrijskih i sunčanih okvira, savetovanje oko stakala,
             proveru dioptrije i precizne popravke naočara.
@@ -569,14 +662,10 @@
           <div class="map-card">
             <iframe
               title="Mapa lokacija Express Optičar Urošević"
-              src="https://www.google.com/maps?ll=44.7932,20.5057&z=17&output=embed"
+              src="https://www.google.com/maps?q=Bulevar%20kralja%20Aleksandra%20305%2C%20Beograd&output=embed"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div class="map-pins" aria-hidden="true">
-              <span class="map-pin map-pin--one">305</span>
-              <span class="map-pin map-pin--two">297</span>
-            </div>
           </div>
         </div>
       </section>
@@ -587,6 +676,6 @@
       <a href="#pocetna">Nazad na vrh</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260707-language-switch"></script>
   </body>
 </html>
