@@ -30,8 +30,9 @@ const translations = {
       [".main-nav a:nth-child(3)", "Frames"],
       [".main-nav a:nth-child(4)", "Prescription lenses"],
       [".main-nav a:nth-child(5)", "Lens fitting"],
-      [".main-nav a:nth-child(6)", "Eye test"],
-      [".main-nav a:nth-child(7)", "Contact"],
+      [".main-nav a:nth-child(6)", "Contact lenses"],
+      [".main-nav a:nth-child(7)", "Eye test"],
+      [".main-nav a:nth-child(8)", "Contact"],
       [".hero", { attr: "aria-label", value: "Introduction" }],
       [".hero-kicker", "Family optical shop in Belgrade"],
       [".hero h1", "Traditional optics, a modern view."],
@@ -59,7 +60,8 @@ const translations = {
       [".intro-icons a:nth-child(2) strong", "Frames"],
       [".intro-icons a:nth-child(3) strong", "Prescription lenses"],
       [".intro-icons a:nth-child(4) strong", "Lens fitting"],
-      [".intro-icons a:nth-child(5) strong", "Eye test"],
+      [".intro-icons a:nth-child(5) strong", "Contact lenses"],
+      [".intro-icons a:nth-child(6) strong", "Eye test"],
       [".services-band", { attr: "aria-label", value: "Services" }],
       [".repair-tabs-section", { attr: "aria-label", value: "Glasses repair tabs" }],
       [".repair-tabs-heading h3", "Repairs, adjustments and precise interventions."],
@@ -246,6 +248,35 @@ const translations = {
           html:
             "<strong>For optical shops (B2B):</strong> We provide service edging and fitting for other optical shops. If your shop does not have equipment for specific fittings such as drilling or sports bases, we are your reliable partner who respects deadlines and guarantees top quality.",
         },
+      ],
+      [".contact-lenses-copy > span", "Contact lenses"],
+      [
+        "#contact-lenses-title",
+        "Contact lenses from leading global brands - always fresh and matched to your prescription",
+      ],
+      [
+        ".contact-lenses-copy > p",
+        "In our optical shop you can find soft, semi-rigid and rigid contact lenses from leading global manufacturers. Whether you use daily, monthly, astigmatism or progressive contact lenses, we are here to provide exactly what your eyes need.",
+      ],
+      [".contact-lenses-block:nth-of-type(1) h3", "How does buying from us work?"],
+      [".contact-lenses-block:nth-of-type(1) p", "We sell all contact lenses exclusively by order."],
+      [".contact-lenses-block:nth-of-type(2) h3", "Why is that an advantage for you?"],
+      [
+        ".contact-lenses-block:nth-of-type(2) p",
+        "Lenses do not sit on shelves for a long time. This way, we guarantee that you receive a completely new, original product with the maximum expiry date, directly from the factory and exactly according to your prescription parameters.",
+      ],
+      [".contact-lenses-products", { attr: "aria-label", value: "Examples of contact lenses available" }],
+      [
+        ".contact-lenses-products img:nth-child(1)",
+        { attr: "alt", value: "Bausch + Lomb SofLens contact lenses" },
+      ],
+      [
+        ".contact-lenses-products img:nth-child(2)",
+        { attr: "alt", value: "Alcon Air Optix and Dailies contact lenses" },
+      ],
+      [
+        ".contact-lenses-products img:nth-child(3)",
+        { attr: "alt", value: "Bausch + Lomb Ultra contact lenses" },
       ],
       ["#vision-title", "Eye test"],
       [
