@@ -46,6 +46,7 @@ const translations = {
       [".hero-proof div:nth-child(3) dt", "Locations"],
       [".hero-proof div:nth-child(3) dd", "Bulevar kralja Aleksandra 305 and 297"],
       [".hero-visual img", { attr: "alt", value: "Shopfront and entrance to Express Opticar Urosevic" }],
+      [".hero-visual figcaption", "Bulevar kralja Aleksandra 305"],
       [".intro-grid h2", "More than four decades of expertise, trust and careful work."],
       [
         ".intro-copy p:nth-child(1)",
@@ -217,6 +218,18 @@ const translations = {
       [".installation-figure--machine img", { attr: "alt", value: "Essilor Mister Blue 2.0 machine for precise prescription lens fitting" }],
       [".installation-figure:not(.installation-figure--machine) img", { attr: "alt", value: "Software for digital centering and lens-shape processing" }],
       [".installation-figure:not(.installation-figure--machine) figcaption", "Digital system for lens centering and processing"],
+      [
+        ".installation-mobile-figure--machine img",
+        { attr: "alt", value: "Essilor Mister Blue 2.0 machine for precise prescription lens fitting" },
+      ],
+      [
+        ".installation-mobile-figure:not(.installation-mobile-figure--machine) img",
+        { attr: "alt", value: "Software for digital centering and lens-shape processing" },
+      ],
+      [
+        ".installation-mobile-figure:not(.installation-mobile-figure--machine) figcaption",
+        "Digital system for lens centering and processing",
+      ],
       [".installation-copy > span", "Lens fitting"],
       ["#installation-title", "Top precision for your vision: fitting lenses into every type of frame"],
       [
@@ -316,8 +329,11 @@ const translations = {
       [".contact-card--wide > span", "Phone numbers"],
       [".contact-visual", { attr: "aria-label", value: "Location map" }],
       [".map-card iframe", { attr: "title", value: "Map of Express Opticar Urosevic locations" }],
-      [".site-footer p", "© 2026 Express Opticar Urosevic. All rights reserved."],
-      [".site-footer a", "Back to top"],
+      [
+        ".site-footer p",
+        { html: "<span>© 2026 Express Opticar Urosevic.</span> <span>All rights reserved.</span>" },
+      ],
+      [".back-to-top", { attr: "aria-label", value: "Back to top" }],
     ],
   },
 };
@@ -465,6 +481,20 @@ toggle.addEventListener("click", () => {
   document.body.classList.toggle("menu-open", isOpen);
   toggle.setAttribute("aria-expanded", String(isOpen));
 });
+
+document.addEventListener(
+  "click",
+  (event) => {
+    if (!document.body.classList.contains("menu-open") || header.contains(event.target)) {
+      return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+    closeMenu();
+  },
+  true,
+);
 
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.langOption));
