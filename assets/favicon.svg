@@ -1,46 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Express Optičar Urošević">
   <path
-    d="M25.5 28.5 C29 21.5 35 21.5 38.5 28.5"
+    d="M25.5 24.5 C29.5 19 34.5 19 38.5 24.5"
     fill="none"
-    stroke="#ed1c24"
-    stroke-width="6"
+    stroke="#ffffff"
+    stroke-width="4"
     stroke-linecap="round"
   />
   <circle
     cx="21"
-    cy="35"
-    r="15"
+    cy="28"
+    r="11.5"
     fill="none"
-    stroke="#414092"
-    stroke-width="7"
+    stroke="#ffffff"
+    stroke-width="5"
   />
   <circle
     cx="43"
-    cy="35"
-    r="15"
+    cy="28"
+    r="11.5"
     fill="none"
-    stroke="#414092"
-    stroke-width="7"
+    stroke="#ffffff"
+    stroke-width="5"
   />
   <path
-    d="M10 35 H5"
+    d="M10 28 H7"
     fill="none"
-    stroke="#414092"
-    stroke-width="7"
-    stroke-linecap="round"
-  />
-  <path
-    d="M59 35 H54"
-    fill="none"
-    stroke="#414092"
-    stroke-width="7"
-    stroke-linecap="round"
-  />
-  <path
-    d="M13.5 35.5 L27 32.5"
-    fill="none"
-    stroke="#414092"
+    stroke="#ffffff"
     stroke-width="5"
     stroke-linecap="round"
   />
+  <path
+    d="M57 28 H54"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M13.5 28.5 L27 26"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="3.6"
+    stroke-linecap="round"
+  />
+  <text
+    x="32"
+    y="53"
+    fill="#ffffff"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="13"
+    font-weight="700"
+    letter-spacing="0.8"
+    text-anchor="middle"
+  >EOU</text>
 </svg>
